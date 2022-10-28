@@ -6,8 +6,47 @@ body {
   height:100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .completed {
   text-decoration: line-through;
   color:grey;
 }
+.list {
+  display: grid;
+    grid-template: 
+        "list-title list-title list-title"         
+        "todo-list completed-button delete-button" 1fr /
+        200px 50px 50px;
+  margin: 0;
+}
+#completed-button {
+  padding: 0;
+  grid-area: completed-button;
+  list-style: none;
+  width: fit-content
+}
+#delete-button {
+  padding: 0;
+  grid-area: delete-button;
+  list-style: none;
+  width: fit-content
+}
+#todo-list {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  grid-area: todo-list;
+  width: fit-content;
+  list-style: none;
+  padding: 0
+}
+.list-title {
+  grid-area: list-title;
+}
+button {
+  background-color: greenyellow;
+  font-size: 5px;
+  height: fit-content;
+  width: fit-content
+}
+.delete-button button {
+  background-color: violet;
+}
+
