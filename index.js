@@ -26,9 +26,11 @@ const submit = document.getElementsByTagName("input")[1]
 const nameBox = document.getElementsByTagName("input")[0]
 
 console.log(state)
+console.log(nameBox.value)
 
 // post new todo
-submit.addEventListener('click', (event) => {
+submit.addEventListener('click', (event) => {   
+    if(nameBox.value !== ''){
     event.preventDefault()
 
     const uri = "http://localhost:3000/todos"
@@ -49,7 +51,9 @@ submit.addEventListener('click', (event) => {
         console.log(newToDo)
     })
     render()
+}
 })
+
 // render list
 function render(){
     toDoUl.innerHTML = ''

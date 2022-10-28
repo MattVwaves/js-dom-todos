@@ -1,12 +1,12 @@
 {
   "todos": [
     {
-      "title": "my very first todo :)",
+      "title": "my very first todo:)",
       "completed": false,
       "id": 1
     },
     {
-      "title": "(the one i did already)",
+      "title": "the one i already did",
       "completed": true,
       "id": 2
     }
