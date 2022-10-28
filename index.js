@@ -62,7 +62,7 @@ function render(){
         const newToDo = document.createElement('li')
         newToDo.innerText = todo.title
         if (todo.completed === true){
-        newToDo.setAttribute('style', 'text-decoration: line-through')
+        newToDo.setAttribute('style', 'text-decoration: line-through; color: greenyellow')
         }
         toDoUl.appendChild(newToDo)
 
